@@ -110,7 +110,7 @@ void setup() {
   
   // PT100 Setup - MCP3424
   Wire.begin(32, 33);
-  MCP.Configuration(2, 18, 0, 1);
+  MCP.Configuration(1, 18, 0, 1);
   
   // DHT Setup - PIN 27
   dht.begin();
@@ -149,7 +149,7 @@ void loop() {
     p = digitalRead(GPI1);
 
   // t = random(21, 30);
-    h = random(0, 10);
+  // h = random(0, 10);
   // c = random(0, 10);
   // v = random(0, 10);
   // p = random(0, 10);
